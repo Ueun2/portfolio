@@ -47,8 +47,10 @@ $(document).ready(function () {
   const $modalBg = $('.modal-wrap')
   $item.on('click', function () {
     $(this).next().slideDown(300);
+    $('body').css({overflow : 'hidden'})
   });
   $modalBg.on('click', function () {
     $('.modal-wrap').fadeOut(300);
+    $('body').css({overflow : 'auto'})
   });
 });
