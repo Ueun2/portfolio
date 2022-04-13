@@ -38,9 +38,11 @@ $(document).ready(function () {
   webBtn.on('click', function (e) {
     e.preventDefault();
     detail.slideDown(300);
+    $('body').css({overflow : 'hidden'});
   })
   detail.on('click', function () {
     detail.fadeOut(300);
+    $('body').css({overflow : 'auto'});
   });
   // graphic
   const $item = $('.item img');
