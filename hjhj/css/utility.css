@@ -1,0 +1,17 @@
+/* 클리어 픽스 */
+.clear-fix::after{
+  content: "";
+  display: block;
+  clear: both;
+} 
+
+/* 숨김처리 */
+.blind {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+

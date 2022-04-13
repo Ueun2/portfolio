@@ -1,0 +1,46 @@
+@charset "utf-8";
+@media all and (max-width : 1024px) {
+  body{
+    font-size: 18px;
+  }
+  .part {
+    padding: 60px 40px;
+  }
+  /* header */
+  .header{
+    padding: 0 40px;
+  }
+  /* prtfolio */
+  .portfolio{
+    padding: 0 40px;
+  }
+  .title{
+    font-size: 12vw;
+  }
+  .title span{
+    font-size: 6vw;
+  }
+  .portfolio-txt{
+    height: 80vh;
+  }
+  .portfolio-txt p{
+    margin-top: 100px;
+    font-size: 4vw;
+  }
+  /* web */
+ 
+  .web h2{
+    height: fit-content;
+  }
+  .webtxt{
+    width: 49%;
+  }
+  .webimg{
+    width: 50%;
+    margin: auto 0;
+  }
+  /* graphic */
+  
+ 
+
+}
