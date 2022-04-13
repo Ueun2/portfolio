@@ -32,42 +32,6 @@ $(document).ready(function () {
       }
     });
   });
-  // 페이지 이동
-  function pages() {
-      window.addEventListener("wheel", function (e) {
-        if($(window).width() > 1024){
-        e.preventDefault();
-      }
-      }, {
-        passive: false
-        }
-      );
-    const $html = $("html");
-    let page = 1;
-    const lastPage = $(".part").length;
-    $(window).on("wheel", function (e) {
-      if ($(window).width() > 1024) {
-        if (e.originalEvent.deltaY > 0) {
-          if (page == lastPage) {
-            return;
-          } else {
-            page++;
-          }
-        } else if (e.originalEvent.deltaY < 0) {
-          if (page == 1) {
-            return;
-          } else {
-            page--;
-          }
-        }
-        const partTop = (page - 1) * $(window).height();
-        $html.animate({
-          scrollTop: partTop
-        });
-      }
-    });
-  };
-  window.addEventListener('resize', pages(), true);
   // web
   const webBtn = $('.webdetail');
   const detail = $('.detailimg-bg');
